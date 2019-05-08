@@ -1,5 +1,7 @@
 # My projects
 
+During my learning process I've committed some projects in Golang and PHP. Here is a list of them.
+
 ## PinGOr
 
 [![Build Status](https://travis-ci.org/krzysztof-gzocha/pingor.svg?branch=master)](https://travis-ci.org/krzysztof-gzocha/pingor)
@@ -25,6 +27,8 @@ Small golang program capable of periodically checking different currencies excha
 Implemented providers:
 - `currencyConverter` - [https://free.currencyconverterapi.com](https://free.currencyconverterapi.com)
 - `openExchangeRates` - [https://openExchangeRates.org](https://openExchangeRates.org)
+
+Link to [Github](https://github.com/krzysztof-gzocha/curnot)
 
 ## Searcher
 
