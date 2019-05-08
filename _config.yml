@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
 title: "Krzysztof Gzocha"
-description: "Owner and software engineer at Riddlebit"
+description: "Owner and Software Engineer at Riddlebit"
+github:
+  repository_url: https://github.com/krzysztof-gzocha
