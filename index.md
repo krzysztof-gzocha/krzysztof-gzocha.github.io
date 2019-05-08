@@ -23,8 +23,8 @@ Small golang program capable of periodically checking different currencies excha
 
 
 Implemented providers:
-- [x] Name: `currencyConverter` - https://free.currencyconverterapi.com
-- [x] Name: `openExchangeRates` - https://openExchangeRates.org
+- `currencyConverter` - [https://free.currencyconverterapi.com](https://free.currencyconverterapi.com)
+- `openExchangeRates` - [https://openExchangeRates.org](https://openExchangeRates.org)
 
 ## Searcher
 
@@ -40,7 +40,7 @@ This way, inside `CriteriaBuilder` you care only about one `Criteria`, which mak
 You can later use exactly the same `Criteria` for different searches, with different `CriteriaBuilder` and even different `SearchingContext` which can use even different databases.
 You can even use searcher to find **files** on your system thanks to `FinderSearchingContext`.
 
-Full documentation can be found at [http://searcher.rtfd.io/](http://searcher.readthedocs.io/en/stable/introduction.html)
+Full documentation can be found at [https://searcher.rtfd.io/](https://searcher.readthedocs.io/en/stable/introduction.html)
 
 Link to [Github](https://github.com/krzysztof-gzocha/searcher)
 
@@ -48,6 +48,6 @@ Link to [Github](https://github.com/krzysztof-gzocha/searcher)
 
 [![Build Status](https://travis-ci.org/krzysztof-gzocha/payu.svg?branch=master)](https://travis-ci.org/krzysztof-gzocha/payu)
 
-This library written in PHP will allow easily integration with [PayU API v2.1](http://developers.payu.com/pl/restapi.html). It's a bit old, so it works with PHP version >=5.4 and HHVM.  
+This library written in PHP will allow easily integration with [PayU API v2.1](https://developers.payu.com/pl/restapi.html). It's a bit old, so it works with PHP version >=5.4 and HHVM.  
 
 Link to [Github](https://github.com/krzysztof-gzocha/payu)
