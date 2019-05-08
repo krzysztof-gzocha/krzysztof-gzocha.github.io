@@ -1,8 +1,6 @@
 # My projects
 
-## Golang
-
-### PinGOr
+## PinGOr
 
 [![Build Status](https://travis-ci.org/krzysztof-gzocha/pingor.svg?branch=master)](https://travis-ci.org/krzysztof-gzocha/pingor)
 [![Go Report Card](https://goreportcard.com/badge/github.com/krzysztof-gzocha/pingor)](https://goreportcard.com/report/github.com/krzysztof-gzocha/pingor)
@@ -19,7 +17,7 @@ When connection checks will drop below configured success rate threshold, then t
 
 Link to [Github](https://github.com/krzysztof-gzocha/pingor)
 
-### CurNot - Currency Rate Notifier
+## CurNot - Currency Rate Notifier
 
 Small golang program capable of periodically checking different currencies exchange rates with different providers.
 
@@ -28,9 +26,7 @@ Implemented providers:
 - [x] Name: `currencyConverter` - https://free.currencyconverterapi.com
 - [x] Name: `openExchangeRates` - https://openExchangeRates.org
 
-## PHP
-
-### Searcher 
+## Searcher
 
 [![Build Status](https://travis-ci.org/krzysztof-gzocha/searcher.svg?branch=master)](https://travis-ci.org/krzysztof-gzocha/searcher) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/krzysztof-gzocha/searcher/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/krzysztof-gzocha/searcher/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/krzysztof-gzocha/searcher/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/krzysztof-gzocha/searcher/?branch=master) [![Packagist](https://img.shields.io/packagist/v/krzysztof-gzocha/searcher.svg?style=plastic)](https://packagist.org/packages/krzysztof-gzocha/searcher) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/2b7df098-46c6-43e1-ac94-b0eab3d46401/mini.png)](https://insight.sensiolabs.com/projects/2b7df098-46c6-43e1-ac94-b0eab3d46401)
 
@@ -48,7 +44,7 @@ Full documentation can be found at [http://searcher.rtfd.io/](http://searcher.re
 
 Link to [Github](https://github.com/krzysztof-gzocha/searcher)
 
-### PayU integration
+## PayU integration
 
 [![Build Status](https://travis-ci.org/krzysztof-gzocha/payu.svg?branch=master)](https://travis-ci.org/krzysztof-gzocha/payu)
 
