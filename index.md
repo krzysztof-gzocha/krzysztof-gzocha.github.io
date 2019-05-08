@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # My projects
 
 During my learning process I've committed some projects in Golang and PHP. Here is a list of them.
