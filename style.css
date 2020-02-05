@@ -1,0 +1,130 @@
+html
+{
+  scroll-behavior: smooth;
+}
+body
+{
+	background: rgb(0,252,255);
+	background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+	font-family: arial, verdana;
+
+}
+p
+
+#gorna_czesc_strony
+{
+	min-height: 250px;
+
+}
+
+#powitanie
+{
+	position: absolute;
+	left: 20%;
+	top: 1px;
+	width: 50%;
+	padding-top: 100px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#srodkowa_czesc_strony
+{
+	display: flex;
+	min-height: 800px;
+	color: gray;
+}
+nav
+{
+	height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(212,228,239,0.01);
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+#icons
+{
+	float: left;
+	display: flex;
+	flex-direction: row;
+
+}
+#progress_bar
+{
+ width: 50%;
+}
+#skills1
+{
+	width: 80%;
+}
+#skills2
+{
+	width: 50%;
+}
+#umiejetnosci
+{
+	display: flex;
+	float: left;
+	flex-direction: column;
+}
+
+article
+{
+	flex: 5;
+	padding: 50px;
+	margin-left: 200px;
+	background: rgba(212,228,239,0.1);
+}
+aside
+{
+	flex: 2;
+}
+#wlasciwe_menu
+ {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(102, 153, 255, 0);
+}
+
+li a
+{
+  display: block;
+  color: gray;
+  padding: 8px 16px;
+  text-decoration: none;
+	font-weight: bold;
+}
+
+li a.active
+ {
+  background-color: rgba(102, 153, 255, 0.1);
+  color: white;
+
+}
+
+li a:hover:not(.active)
+ {
+  background-color:  rgba(102, 153, 255, 0.1);
+  color: white;
+	text-decoration: none;
+}
+
+#dolna_czesc_strony
+{
+	padding-bottom: 5px;
+	width: 99%;
+	height: 10px;
+
+}
+footer
+{
+	font-size: 60%;
+	text-align: center;
+	color: black;
+	opacity: 0.5;
+}
