@@ -12,6 +12,10 @@ jobs:
       run: pwd
       shell: bash
 
+    - name: Display files
+      run: ls -lahR /github
+      shell: bash
+
     - name: Link Checker
       uses: peter-evans/link-checker@v1.2.0
       with:
