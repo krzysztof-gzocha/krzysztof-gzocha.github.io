@@ -8,6 +8,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Display where are we
+      run: pwd
+      shell: bash
+
+    - name: Link Checker
+      uses: peter-evans/link-checker@v1.2.0
+      with:
+        args: -v -r *
+
     - name: HTMLProofer
       uses: chabad360/htmlproofer@v1.1
       with:
@@ -18,10 +27,6 @@ jobs:
       with:
         root: "."
         format: text
-        log_level: INFO
+        log_level: WARNING
         css: true
 
-    - name: Link Checker
-      uses: peter-evans/link-checker@v1.2.0
-      with:
-        args: -v -r *
