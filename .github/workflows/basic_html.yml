@@ -1,6 +1,6 @@
 name: CI
 
-on: [pull_request]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -8,20 +8,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: HTMLProofer
-      uses: chabad360/htmlproofer@v1.1
-      with:
-        directory: "."
+      - name: Display where are we
+        run: pwd
+        shell: bash
 
-    - name: HTML5 Validator
-      uses: Cyb3r-Jak3/html5validator-action@v0.3
-      with:
-        root: "."
-        format: text
-        log_level: INFO
-        css: true
+      - name: Display files
+        run: ls -lahR
+        shell: bash
 
-    - name: Link Checker
-      uses: peter-evans/link-checker@v1.2.0
-      with:
-        args: -v -r *
+      - name: Link Checker
+        uses: peter-evans/link-checker@v1.2.0
+        with:
+          args: -v -r *
+
+      - name: HTMLProofer
+        uses: chabad360/htmlproofer@v1.1
+        with:
+          directory: "."
