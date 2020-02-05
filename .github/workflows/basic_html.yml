@@ -1,0 +1,20 @@
+name: CI
+
+on: [pull_request, push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: HTMLProofer
+      uses: chabad360/htmlproofer@v1.1
+    - name: HTML5 Validator
+      uses: Cyb3r-Jak3/html5validator-action@v0.3
+      with:
+        format: text
+        log_level: INFO
+        css: true
+    - name: Link Checker
+      uses: peter-evans/link-checker@v1.2.0
