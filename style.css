@@ -5,6 +5,7 @@ html
 body
 {
   background: linear-gradient(to left, #4b79a1, #283e51);
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(85,102,119,1) 100%);
 	font-family: arial, verdana;
   display: flex;
   flex-direction: column;
@@ -15,7 +16,9 @@ body
 header
 {
 	background: linear-gradient(to right, #4b79a1, #283e51);
+  background: #556677;
   display: flex;
+  border-bottom: solid;
 }
 
 #top_site
@@ -34,26 +37,54 @@ header
 #logo_top
 {
   min-width: 200px;
-  max-width: 22%;
+  max-width: 20%;
   order: 1;
 }
 #top_data
 {
-  max-width: 60%;
+  max-width: 62%;
   text-align: right;
   color: black;
-  border-bottom: solid;
   order: 2;
+  background: #556677;
+  color: #e0dfdc;
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020,
+   0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
 }
 #top_data h1, h2
 {
 font-style: italic;
+
+}
+/* overflow: hidden; /* Ensures the content is not revealed until the animation */
+/*  border-right: .15em solid transparent; /* The typwriter cursor */
+/*  white-space: nowrap; /* Keeps the content on a single line */
+/*  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+/*  letter-spacing: .05em;
+  animation:
+    typing 3.5s steps(60, end),
+    blink-caret .65s step-end 8;
+
+/* The typing effect */
+/*@keyframes typing (min-width: 768px) {
+  from { width: 0 }
+  to { width: 100% }
 }
 
+/* The typewriter cursor effect */
+/*@keyframes blink-caret (min-width: 768px) {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+} */
 #icons
 {
   width: 15%;
   order: 3;
+  color: #e0dfdc;
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020,
+   0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
 }
 #icons p
 {
@@ -72,7 +103,7 @@ nav
   position: sticky;
   z-index: 1;
   top: 0;
-  background-color: rgba(212,228,239,0.01);
+
   overflow-x: hidden;
   order: 1;
 }
@@ -235,7 +266,7 @@ footer
 }
 
                       @media screen and (max-width: 768px) {
-                        aside, #icons {
+                        aside, #icons{
                           display: none;
                         }
                         #top_site{
@@ -264,29 +295,30 @@ footer
                           position: sticky;
                           z-index: 1;
                           top: 0;
-                          background-color: rgba(102, 153, 255, 1);
-                          overflow-x: hidden;
-                          overflow-y: hidden;
+                          background: black;
+                          overflow: auto;
                           order: 1;
+                          margin: auto;
+                        }
+                        nav li{
+
                         }
                         #main_menu
                          {
                           list-style-type: none;
-                          margin: 0;
                           padding: 0;
                           background-color: rgba(102, 153, 255, 0);
+                          display: inline;
                         }
-
                         #main_menu a
                         {
                           display: block;
-                          float:left;
+                          float: left;
                           color: lightgray;
                           padding: 6px 10px;
                           text-decoration: none;
                         	font-weight: bold;
                         }
-
                         #main_menu li a.active
                          {
                           background-color: rgba(102, 153, 255, 0.5);
@@ -297,7 +329,7 @@ footer
                         #main_menu li a:hover:not(.active)
                          {
                           background-color:  rgba(102, 153, 255, 0.5);
-                          color: white;
+                          color: lightgray;
                         	text-decoration: none;
                         }
                         article
@@ -355,16 +387,15 @@ footer
                           flex-direction: column;
                           width: 100%;
                           justify-content: flex-start;
-                          border: solid;
+                          align-items: center;
                         }
-                        #logo_bottom, #contact_data, #contact_icons
+                        #logo_bottom{
+                          max-width: 70%;
+                          order: 1;
+                        }
+                        #contact_data, #contact_icons
                         {
                           min-width: 100%;
-                        }
-                        #logo_bottom
-                        {
-                          order: 1;
-                          align-items: center;
                         }
                         #contact_data
                         {
@@ -411,5 +442,5 @@ footer
                           text-align: center;
                         	color: gray;
                         	opacity: 0.8;
-                        }                        }
+                        }
                       }
