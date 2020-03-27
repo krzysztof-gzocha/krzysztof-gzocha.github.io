@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0147c3c1c3.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <title>Riddlebit Krzysztof Gzocha - Software Engineer</title>
 </head>
 <body>
@@ -29,6 +30,8 @@
         </div>
     </div>
 </header>
+  <div id="header_border">
+  </div>
 <div id="middle_site">
     <nav>
         <!--<button type="button" class="btn btn-info" data-toggle="collapse show" data-target="#main_menu_mobile">Menu</button>
@@ -37,12 +40,12 @@
         <ul id="main_menu">
             <li><a href="#aboutme">O mnie</a></li>
             <li><a href="#projects">Projekty</a></li>
-            <li><a href="#skills">Umiejętności</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
         <!--</div>-->
     </nav>
     <article>
+      <div class="section" style="padding-top: 0;">
         <div class="main_section_title">
             <p id="aboutme">
             <h1>O mnie</h1>
@@ -51,6 +54,8 @@
         <p>Jestem inżynierem oprogramowania, który specjalizuje się w technologiach internetowych.</br>
             Od 2013 roku miałem przyjemność pracować z wieloma technologiami, z których najbardziej upodobałem
             sobie:</p>
+        <div id="my_skills">
+        <div id="list_my_skills">
         <ul class="list">
             <li><h4>języki:</h4>
                 <ul class="underlist">
@@ -79,6 +84,45 @@
                 <li> GoLand i wiele innych...</li>
             </ul>
         </ul>
+      </div> <!-- list_my_skills-->
+      <div class='skillBox'>
+        <p><iconify-icon data-icon="cib:php"></iconify-icon>PHP</p>
+        <div class="container">
+          <div class="skills PHP">80%</div>
+        </div>
+
+        <p><iconify-icon data-icon="cib:go"></iconify-icon>Go</p>
+        <div class="container">
+          <div class="skills Go">85%</div>
+        </div>
+
+        <p><iconify-icon data-icon="whh:html"></iconify-icon>HTML/CSS</p>
+        <div class="container">
+          <div class="skills html_css">30%</div>
+        </div>
+
+        <p><iconify-icon data-icon="bytesize:github"></iconify-icon>git</p>
+        <div class="container">
+          <div class="skills git">80%</div>
+        </div>
+
+        <p><iconify-icon data-icon="cib:symfony"></iconify-icon>Symfony</p>
+        <div class="container">
+          <div class="skills symfony">60%</div>
+        </div>
+
+        <p><iconify-icon data-icon="simple-icons:zendframework"></iconify-icon>Zend framework 2</p>
+        <div class="container">
+          <div class="skills zend_framework">50%</div>
+        </div>
+
+        <p><iconify-icon data-icon="twemoji:flag-for-flag-united-kingdom"></iconify-icon>English</p>
+        <div class="container">
+          <div class="skills english">90%</div>
+        </div>
+
+      </div><!-- skillBox -->
+      </div> <!--my_skills-->
         <p>Byłem odpowiedzialny za zebranie wymagań od zagranicznego klienta, projektowanie, implementację, audyt,
             wdrożenie, integrację z różnymi systemami, monitorowanie, przegląd kodu wytworzonego przez innych członków
             zespołu oraz przeszkolenie nowych lub mniej doświadczonych kolegów.
@@ -99,6 +143,14 @@
             zbieranie wymagań.
             Poza sferą zawodową lubię poczytać dobrą książkę - <em>"Nowe Oświecenie"</em> autora S. Pinker'a może tutaj
             świecić przykładem - lub zagrać w futbol stołowy - mało kto już chce ze mną grać :(</p>
+
+        <!-- <div class='container' style="padding-top: 5px;"> -->
+
+      <!-- container -->
+    </div>
+
+
+        <div class="section">
         <div class="main_section_title">
             <p id="projects">
             <h1>Moje projekty</h1>
@@ -165,83 +217,9 @@
         <p>This library written in PHP will allow easily integration with <a class="external_link" href="https://developers.payu.com/pl/restapi.html" target="_blank">PayU API v2.1</a>. It’s a
             bit old, so it works with PHP version >=5.4 and HHVM.</p>
         <p>Link to <a class="external_link" href="https://github.com/krzysztof-gzocha/payu" target="_blank">Github</a></p>
-        <div class="main_section_title">
-            <p id="skills">
-                <h1>Umiejętności</h1>
-            </p>
-        </div>
-        <div id="skills_section">
-            <div class="skills_div">
-                <div class="progress_bar">
-                    <div class="container">
-                        <h2>PHP</h2>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills_div">
-                <div class="progress_bar">
-                    <div class="container">
-                        <h2>Go</h2>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:85%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills_div">
-                <div class="progress_bar">
-                    <div class="container">
-                        <h2>HTML/CSS</h2>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:30%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills_div">
-                <div class="progress_bar">
-                    <div class="container">
-                        <h2>git</h2>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills_div">
-                <div class="progress_bar">
-                    <div class="container">
-                        <h2>Symfony</h2>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills_div">
-                <div class="progress_bar">
-                    <div class="container">
-                        <h2>Zend framework 2</h2>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills_div">
-                <div class="progress_bar">
-                    <div class="container">
-                        <h2>English</h2>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+
+      <div class="section">
         <div class="main_section_title">
             <p id="contact">
             <h1>Kontakt</h1>
@@ -283,6 +261,7 @@
                 </div>
             </div>
         </div>
+      </div>
     </article>
 </div>
 <div id="bottom_site">
