@@ -14,15 +14,11 @@ body
 
 header
 {
-  background: linear-gradient(to bottom, rgba(86,102,119,1) 0%, rgba(63,69,77,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(51,55,61,1) 100%);
   display: flex;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.9), 0 20px 30px 5px rgba(0,0,0,0.82), 0 8px 10px -5px rgba(0,0,0,0.3);
 }
-#header_border{
-  width: 100%;
-  height: 50px;
-  background: linear-gradient(to bottom, rgba(63,69,77,1) 0%, rgba(51,55,61,1) 100%);
-  border-bottom: solid;
-}
+
 #top_site
 {
   min-height: 200px;
@@ -42,22 +38,29 @@ header
   max-width: 20%;
   order: 1;
 }
+
 #top_data
 {
   max-width: 62%;
-  text-align: right;
+  text-align: left;
   color: black;
   order: 2;
   background: inherit;
-  color: #e0dfdc;
+  color: black;
   letter-spacing: .1em;
-  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020,
+  z-index: 1;
+  /*text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020,
    0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+   text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, 2px 2px 2px rgba(206,89,55,0);
+   color: #000000;
+   background: #FFFFFF;*/
 }
-#top_data h1, h2
+#top_data h1
 {
-font-style: italic;
-
+font-weight: bold;
+}
+#top_data h2{
+font-weight: bold;
 }
 /* overflow: hidden; /* Ensures the content is not revealed until the animation */
 /*  border-right: .15em solid transparent; /* The typwriter cursor */
@@ -83,14 +86,32 @@ font-style: italic;
 {
   width: 15%;
   order: 3;
-  color: #e0dfdc;
+  color: black;
   letter-spacing: .1em;
-  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020,
-   0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
 }
 #icons p
 {
   text-align: center;
+}
+#icons .fab, #icons .fas{
+  color: black;
+  text-decoration: none;
+}
+
+#icons .fab:hover, #icons .fas:hover
+{
+  color: white;
+  text-decoration: none;
+}
+#icons .fab:visited, #icons .fas:visited
+{
+  color: black;
+  text-decoration: none;
+}
+#icons .fab:hover:not(.active), #icons .fas:hover:not(.active)
+{
+  color: white;
+  text-decoration: none;
 }
 #middle_site
 {
@@ -125,6 +146,7 @@ nav
   margin: 0;
   padding: 0;
   background-color: rgba(102, 153, 255, 0);
+
 }
 
 #main_menu a
@@ -155,6 +177,7 @@ article
   padding-left: 50px;
   padding-right: 50px;
   order: 2;
+  font-size: 20px;
 	/*background: rgba(212,228,239,0.1);*/
 }
 #my_skills
@@ -169,20 +192,35 @@ article
 #list_my_skills{
   width: 40%;
   order: 1;
+  padding-top: 5px;
 }
+* {box-sizing:border-box}
 .skillBox{
   width: 40%;
-  align-items: flex-end;
+  height: 400px;
   order: 2;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skills_container{
+  width: 100%;
+  background-color: gray;
+  height: 35px;
 }
 
-* {box-sizing:border-box}
 .skills {
-  width: 80%;
+  width: 100%;
   text-align: center;
   color: white;
-  font-size: 0.6em;
-  height: 15px;
+  font-size: 10px;
+  height: 35px;
+  margin-left: 0;
+}
+.skills p{
+  padding-left: 10px;
+  text-align: left;
 }
 .PHP {width: 80%; background-color: black;}
 .Go {width: 85%; background-color: black;}
@@ -197,13 +235,20 @@ article
   height: 40px;
   padding-right: 15px;
 }
+
 p
 {
   text-align: justify;
 }
+.main_list:first-child{
+  padding-top: 0;
+}
+.main_list{
+  padding-top: 10px;
+}
 .list
 {
-  list-style-type: disc;
+  list-style-type: none;
 }
 .underlist
 {
@@ -301,7 +346,7 @@ aside
   flex-direction: column;
 	padding-bottom: 5px;
 	width: 100%;
-	height: 150px;
+	height: 50px;
 
 }
 
@@ -357,6 +402,7 @@ footer
                           padding: 0;
                           background-color: rgba(102, 153, 255, 0);
                           display: inline;
+                          width: 100%;
                         }
                         #main_menu a
                         {
@@ -413,12 +459,13 @@ footer
                         }
                         #my_skills{
                           flex-direction: column;
+                          width: 100%;
                         }
                         #list_my_skills{
                           width: 100%;
                         }
                         .skillBox{
-                          width: 100%;
+                          width: 80%;
                         }
                         .main_section_title
                         {
@@ -483,7 +530,7 @@ footer
                           flex-direction: column;
                         	padding-bottom: 5px;
                         	width: 100%;
-                        	height: 150px;
+                        	height: 50px;
 
                         }
 
