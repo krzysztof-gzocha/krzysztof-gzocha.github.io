@@ -1,0 +1,29 @@
+name: Linters
+
+on: [pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Link Checker
+      uses: peter-evans/link-checker@v1.2.0
+      with:
+        args: -v -r *
+
+    - name: HTMLProofer
+      uses: chabad360/htmlproofer@v1.1
+      with:
+        directory: "."
+
+    - name: HTML5 Validator
+      uses: Cyb3r-Jak3/html5validator-action@v0.3
+      with:
+        root: "."
+        format: text
+        log_level: WARNING
+        css: true
