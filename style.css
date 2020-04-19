@@ -1,31 +1,50 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 html
 {
   scroll-behavior: smooth;
 }
 body
 {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(51,55,61,1)));
+  background: -o-linear-gradient(bottom, rgba(0,0,0,1) 0%, rgba(51,55,61,1) 100%);
   background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(51,55,61,1) 100%);
 	font-family: arial, verdana;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /*overflow-y: hidden; /* Hide vertical scrollbar */
   /*overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 header
 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(51,55,61,1)));
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(51,55,61,1) 100%);
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(51,55,61,1) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.9), 0 20px 30px 5px rgba(0,0,0,0.82), 0 8px 10px -5px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,0.9), 0 20px 30px 5px rgba(0,0,0,0.82), 0 8px 10px -5px rgba(0,0,0,0.3);
+          box-shadow: 0 16px 24px 2px rgba(0,0,0,0.9), 0 20px 30px 5px rgba(0,0,0,0.82), 0 8px 10px -5px rgba(0,0,0,0.3);
 }
 
 #top_site
 {
   min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 80%;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 12%;
 }
 .logo
@@ -36,7 +55,9 @@ header
 {
   min-width: 200px;
   max-width: 20%;
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 #top_data
@@ -44,16 +65,13 @@ header
   max-width: 62%;
   text-align: left;
   color: black;
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   background: inherit;
   color: black;
   letter-spacing: .1em;
   z-index: 1;
-  /*text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020,
-   0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
-   text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, 2px 2px 2px rgba(206,89,55,0);
-   color: #000000;
-   background: #FFFFFF;*/
 }
 #top_data h1
 {
@@ -62,30 +80,12 @@ font-weight: bold;
 #top_data h2{
 font-weight: bold;
 }
-/* overflow: hidden; /* Ensures the content is not revealed until the animation */
-/*  border-right: .15em solid transparent; /* The typwriter cursor */
-/*  white-space: nowrap; /* Keeps the content on a single line */
-/*  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-/*  letter-spacing: .05em;
-  animation:
-    typing 3.5s steps(60, end),
-    blink-caret .65s step-end 8;
-
-/* The typing effect */
-/*@keyframes typing (min-width: 768px) {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-/*@keyframes blink-caret (min-width: 768px) {
-  from, to { border-color: transparent }
-  50% { border-color: black }
-} */
 #icons
 {
   width: 15%;
-  order: 3;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
   color: black;
   letter-spacing: .1em;
 }
@@ -115,6 +115,8 @@ font-weight: bold;
 }
 #middle_site
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	color: lightgray;
 }
@@ -122,11 +124,14 @@ nav
 {
   height: 100%;
   width: 15%;
+  position: -webkit-sticky;
   position: sticky;
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 /* #icons
 {
@@ -176,33 +181,53 @@ article
   width: 70%;
   padding-left: 50px;
   padding-right: 50px;
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   font-size: 20px;
 	/*background: rgba(212,228,239,0.1);*/
 }
 #my_skills
 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 400px;
   width: 100%;
   padding-bottom: 40px;
 }
 #list_my_skills{
   width: 40%;
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   padding-top: 5px;
 }
-* {box-sizing:border-box}
+* {-webkit-box-sizing:border-box;box-sizing:border-box}
 .skillBox{
   width: 40%;
   height: 400px;
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .skills_container{
   width: 100%;
@@ -217,6 +242,7 @@ article
   font-size: 10px;
   height: 35px;
   margin-left: 0;
+
 }
 .skills p{
   padding-left: 10px;
@@ -231,9 +257,9 @@ article
 .english {width: 90%; background-color: black;}
 
 .iconify {
-  width: 40px;
-  height: 40px;
-  padding-right: 15px;
+  width: 35px;
+  height: 35px;
+  padding-right: 10px;
 }
 
 p
@@ -285,22 +311,37 @@ li a.external_link:hover, .external_link:hover
 
 #contact_container
 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 500px;
 }
 #logo_bottom
 {
+  min-width: 200px;
   max-width: 22%;
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 #contact_data
 {
-  font-size: 1.5em;
-  flex-direction: column;
-  max-width: 50%;
-  order: 2;
+  font-size: 1.2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 60%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 #contact_data address
 {
@@ -308,17 +349,23 @@ border-bottom: solid;
 }
 address
 {
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 #contact_icons p
 {
   text-align: center;
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 aside
 {
   width: 15%;
-  order: 3;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 .fab, .fas
 {
@@ -335,15 +382,20 @@ aside
   color: lightgray;
   text-decoration: none;
 }
-.fab:hover:not(.active), .fas:hover:not(.active)
+#contact_icons.fab:hover:not(.active), #contact_icons.fas:hover:not(.active)
 {
   color: white;
   text-decoration: none;
 }
 #bottom_site
 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 	padding-bottom: 5px;
 	width: 100%;
 	height: 50px;
@@ -358,12 +410,15 @@ footer
 	opacity: 0.8;
 }
 
-                      @media screen and (max-width: 768px) {
-                        aside, #icons{
+                      @media screen and (max-width: 1024px) {
+                        #icons{
                           display: none;
                         }
                         #top_site{
-                          flex-direction: column;
+                          -webkit-box-orient: vertical;
+                          -webkit-box-direction: normal;
+                              -ms-flex-direction: column;
+                                  flex-direction: column;
                           width: 100%;
                           margin: 0;
                         }
@@ -376,25 +431,30 @@ footer
                         }
                         #middle_site
                         {
-                        	flex-direction: column;
+                        	-webkit-box-orient: vertical;
+                        	-webkit-box-direction: normal;
+                        	    -ms-flex-direction: column;
+                        	        flex-direction: column;
                           width: 100%;
                           margin: 0;
-                          justify-content: center;
+                          -webkit-box-pack: center;
+                              -ms-flex-pack: center;
+                                  justify-content: center;
                         }
                         nav
                         {
                           height: 10%;
                           width: 100%;
+                          position: -webkit-sticky;
                           position: sticky;
                           z-index: 1;
                           top: 0;
                           background: black;
                           overflow: auto;
-                          order: 1;
+                          -webkit-box-ordinal-group: 2;
+                              -ms-flex-order: 1;
+                                  order: 1;
                           margin: auto;
-                        }
-                        nav li{
-
                         }
                         #main_menu
                          {
@@ -431,8 +491,10 @@ footer
                           width: 100%;
                           padding-left: 10px;
                           padding-right: 10px;
-                          order: 2;
-                        	/*background: rgba(212,228,239,0.1);*/
+                          -webkit-box-ordinal-group: 3;
+                              -ms-flex-order: 2;
+                                  order: 2;
+
                         }
                         p
                         {
@@ -458,7 +520,10 @@ footer
                         	text-decoration: none;
                         }
                         #my_skills{
-                          flex-direction: column;
+                          -webkit-box-orient: vertical;
+                          -webkit-box-direction: normal;
+                              -ms-flex-direction: column;
+                                  flex-direction: column;
                           width: 100%;
                         }
                         #list_my_skills{
@@ -466,6 +531,10 @@ footer
                         }
                         .skillBox{
                           width: 80%;
+                        }
+                        .iconify {
+                          width: 35px;
+                          height: 35px;
                         }
                         .main_section_title
                         {
@@ -481,35 +550,56 @@ footer
                         }
                         #contact_container
                         {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
                           display: flex;
-                          flex-direction: column;
+                          -webkit-box-orient: vertical;
+                          -webkit-box-direction: normal;
+                              -ms-flex-direction: column;
+                                  flex-direction: column;
                           width: 100%;
-                          justify-content: flex-start;
-                          align-items: center;
+                          -webkit-box-pack: start;
+                              -ms-flex-pack: start;
+                                  justify-content: flex-start;
+                          -webkit-box-align: center;
+                              -ms-flex-align: center;
+                                  align-items: center;
                         }
                         #logo_bottom{
-                          max-width: 70%;
-                          order: 1;
+                          width: 100%;
+                          -webkit-box-ordinal-group: 2;
+                              -ms-flex-order: 1;
+                                  order: 1;
                         }
-                        #contact_data, #contact_icons
-                        {
-                          min-width: 100%;
-                        }
+
                         #contact_data
                         {
-                          font-size: 1.4em;
-                          flex-direction: column;
-                          order: 2;
+                          font-size: 0.9em;
+                          -webkit-box-orient: vertical;
+                          -webkit-box-direction: normal;
+                              -ms-flex-direction: column;
+                                  flex-direction: column;
+                          -webkit-box-ordinal-group: 3;
+                              -ms-flex-order: 2;
+                                  order: 2;
                         }
                         address
                         {
-                          order: 1;
-                          flex-direction: column;
+                          -webkit-box-ordinal-group: 2;
+                              -ms-flex-order: 1;
+                                  order: 1;
+                          -webkit-box-orient: vertical;
+                          -webkit-box-direction: normal;
+                              -ms-flex-direction: column;
+                                  flex-direction: column;
+
                         }
                         #contact_icons p
                         {
                           text-align: center;
-                          order: 2;
+                          -webkit-box-ordinal-group: 3;
+                              -ms-flex-order: 2;
+                                  order: 2;
                         }
 
                         .fab, .fas
@@ -526,8 +616,13 @@ footer
                         }
                         #bottom_site
                         {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
                           display: flex;
-                          flex-direction: column;
+                          -webkit-box-orient: vertical;
+                          -webkit-box-direction: normal;
+                              -ms-flex-direction: column;
+                                  flex-direction: column;
                         	padding-bottom: 5px;
                         	width: 100%;
                         	height: 50px;
@@ -536,9 +631,66 @@ footer
 
                         footer
                         {
+                          width: 100%;
                         	font-size: 70%;
                           text-align: center;
                         	color: gray;
                         	opacity: 0.8;
                         }
                       }
+
+                      @media screen and (max-width: 300px){
+                        .skillBox{
+                          height: 250px;
+                        }
+                        .skills_container{
+                          height: 20px;
+                        }
+                        .skills {
+                          font-size: 5px;
+                          height: 20px;
+                      }
+                    .iconify {
+                      width: 20px;
+                      height: 20px;
+                      padding-right: 5px;
+                    }
+                  }
+
+                  @media screen and (max-width: 422px) and (min-width: 300px){
+                  .skillBox{
+                    height: 350px;
+                  }
+                  .skills_container{
+                    height: 25px;
+                  }
+                  .skills {
+                    font-size: 7px;
+                    height: 25px;
+                }
+              .iconify {
+                width: 25px;
+                height: 25px;
+                padding-right: 5px;
+              }
+            }
+            @media screen and (max-width: 302px) and (min-width: 300px){
+              .skills {
+                font-size: 6.8px;
+              }
+            }
+            @media screen and (max-width: 551px){
+            #contact_data, #contact_icons{
+              min-width: 100%;
+            }
+          }
+            @media screen and (max-width: 1294px) and (min-width: 1024px){
+              .skills {
+                font-size: 7px;
+              }
+              .iconify {
+                width: 30px;
+                height: 30px;
+                padding-right: 5px;
+              }
+            }
