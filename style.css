@@ -133,17 +133,10 @@ nav
       -ms-flex-order: 1;
           order: 1;
 }
-/* #icons
-{
-	float: right;
-  justify-content: center;
-	display: flex;
-	flex-direction: column;
-  position: sticky;
-  top: 0;
-  color: inherit;
+
+.protected:after {
+    content: "ul. " attr(data-part1) " " attr(data-part2) "/" attr(data-part3);
 }
-*/
 
 #main_menu
  {
